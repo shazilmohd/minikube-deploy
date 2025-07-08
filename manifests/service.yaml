@@ -8,6 +8,6 @@ spec:
   ports:
     - port: 80     
       targetPort: 80
-      nodePort: 30015 
+      nodePort: 30016 
   selector:
     app: nginx-app
