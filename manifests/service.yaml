@@ -8,6 +8,9 @@ spec:
   ports:
     - port: 80     
       targetPort: 80
-      nodePort: 30016 
+      nodePort: 30016
+    - name: metrics
+      port: 9113
+      targetPort: 9113
   selector:
     app: nginx-app
