@@ -4,7 +4,6 @@ metadata:
   name: my-service
   namespace: my-nginx-app
 spec:
-  type: NodePort
   ports:
     - port: 80     
       targetPort: 80
@@ -14,3 +13,4 @@ spec:
       targetPort: 9113
   selector:
     app: nginx-app
+  type: NodePort
