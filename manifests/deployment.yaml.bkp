@@ -4,7 +4,7 @@ metadata:
   name: nginx-app-deployment
   namespace: my-nginx-app
 spec:
-  replicas: 6
+  replicas: 2
   selector:
     matchLabels:
       app: nginx-app
@@ -21,7 +21,7 @@ spec:
         - name: nginx-app
           image: 9562066323/my-app-minikube:v1
           ports:
-            - containerPort: 8080
+            - containerPort: 80
           volumeMounts:
             - name: nginx-conf
               mountPath: /etc/nginx/conf.d/default.conf
